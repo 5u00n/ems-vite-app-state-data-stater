@@ -1,17 +1,12 @@
 # EMS (Education Management System)
 
 > A full-featured, modular, real-time school ERP built with React, Firebase, Zustand, and Tailwind CSS.
-> 
-
----
 
 ## 🧩 Overview
 
 **EMS (Education Management System)** is designed to **digitize and streamline** all aspects of school operations — from academic records and attendance to admissions, fees, user management, and notifications — with **modular architecture**, **real-time data updates**, and **offline support**.
 
 Whether you're an **administrator**, a **teacher**, a **student**, or a **parent**, EMS tailors the experience to your role with dedicated dashboards and permissions.
-
----
 
 ## 🏗️ Architecture & Philosophy
 
@@ -22,9 +17,6 @@ EMS follows a **hybrid modular architecture** where each module (like attendance
 - **Flexible**: Session-specific data allows storing historical academic data easily.
 
 > 🔒 Security: Firebase rules restrict access per user role, ensuring data privacy.
-> 
-
----
 
 ## 👨‍🏫 Supported User Roles & Their Features
 
@@ -39,8 +31,6 @@ EMS follows a **hybrid modular architecture** where each module (like attendance
 | **Staff** | Handle admissions, enquiries, basic reporting |
 
 Each role gets a dedicated **layout and dashboard** with features filtered based on permissions.
-
----
 
 ## ⚙️ Core Modules (with Technical Highlights)
 
@@ -103,8 +93,6 @@ Each role gets a dedicated **layout and dashboard** with features filtered based
 - Custom utility to export DOM elements to multi-page PDFs
 - Styled output ready for report cards or fee receipts
 
----
-
 ## 🌐 Realtime + Offline Support
 
 EMS is designed to **work seamlessly with or without internet**:
@@ -113,9 +101,7 @@ EMS is designed to **work seamlessly with or without internet**:
 - Auto-switch UI to "read-only" when offline
 - Data synced to Firebase once connection restores
 
-This ensures **non-stop workflow**, especially useful in areas with spotty internet.
-
----
+>This ensures **non-stop workflow**, especially useful in areas with spotty internet.
 
 ## 🛠️ Dev & Tech Stack
 
@@ -128,8 +114,6 @@ This ensures **non-stop workflow**, especially useful in areas with spotty inter
 | **Tailwind CSS** | Utility-first styling for responsive UI |
 | **ShadCN UI** | Prebuilt, elegant components (cards, inputs, modals, etc.) |
 | **Lucide Icons** | Modern SVG icons |
-
----
 
 ## 🧠 Improvements Over Traditional Systems
 
@@ -144,8 +128,6 @@ This ensures **non-stop workflow**, especially useful in areas with spotty inter
 | Clean Modern UI | ❌ Outdated designs | ✅ Responsive, utility-first, modern |
 | Notifications | ❌ Manual alerts | ✅ Auto-triggered real-time notifications |
 | Built-in PDF Export | ❌ Need external tools | ✅ Native styled exports |
-
----
 
 ## 📊 Sample Firebase Structure (Hybrid Format)
 
@@ -244,7 +226,7 @@ CopyEdit
 
 For your school ERP application, you’ll want a well-organized student structure to efficiently store and manage student-related data. Given your current setup with Firebase Realtime Database and the roles and functionalities you're implementing, here's a suggested student data structure:
 
-### Suggested Student Structure for the Application:
+### Suggested Student Structure for the Application
 
 ```yaml
 students
@@ -309,7 +291,7 @@ students
 
 ```
 
-### Breakdown of Key Sections in the Student Structure:
+### Breakdown of Key Sections in the Student Structure
 
 1. **personalInfo**:
     - Includes essential personal details like name, date of birth, gender, contact, and profile image.
@@ -331,14 +313,14 @@ students
 9. **lastUpdated**:
     - Timestamp of the last time the student's data was updated. This can help in tracking data freshness.
 
-### Advantages of This Structure:
+### Advantages of This Structure
 
 - **Scalability**: You can easily expand the data structure by adding more fields as required by your application, such as adding sections for grades, attendance per term, etc.
 - **Separation of Concerns**: The structure logically separates different types of information, making it easier to manage and query data.
 - **Flexibility**: You can easily add or modify records within each section (e.g., adding more awards or changing the class of a student).
 - **Clear Relationships**: The structure maintains clear relationships between students, their guardians, classes, and academic performance, making it easy to build relationships between different modules in your app (like exams, attendance, and fees).
 
-This structure is designed to be flexible enough to accommodate all the major features of your application, while still being simple enough to maintain. If you need further customization, feel free to adjust the fields to match your exact needs.
+>This structure is designed to be flexible enough to accommodate all the major features of your application, while still being simple enough to maintain. If you need further customization, feel free to adjust the fields to match your exact needs.
 
 ## firebase rules
 
@@ -369,8 +351,6 @@ This structure is designed to be flexible enough to accommodate all the major fe
 
 ```
 
----
-
 ## 📌 Unique Highlights
 
 - 📁 **Academic Year Isolation**: Easily manage multiple years without mixing data.
@@ -379,8 +359,6 @@ This structure is designed to be flexible enough to accommodate all the major fe
 - 🔄 **Smart Role Switching**: Admins can simulate any role without logging out.
 - 📚 **Homework Integration**: Teachers can assign and track holiday work.
 - 🎓 **Post-Exam Readiness**: Summer homework preloads next-class chapters.
-
----
 
 ## 🚧 Planned Features (Coming Soon)
 
@@ -391,8 +369,6 @@ This structure is designed to be flexible enough to accommodate all the major fe
 - 🛎️ Daily Push Notifications on Dashboard
 - 🧠 AI-generated Student Performance Insights
 
----
-
 ## Features
 
 - **Data Management**: Store and manage school data securely using Firebase.
@@ -402,48 +378,36 @@ This structure is designed to be flexible enough to accommodate all the major fe
 - **State Management**: Efficient state management with Zustand.
 - **Icons**: Simple Slate Icons From [Lucide React Icons](https://lucide.dev/icons/)
 
----
-
 ## Getting Started
 
 To get started with the EMS application, follow these steps:
 
 1. **Clone the repository**:
-    
-    ```
-    git clone <https://github.io/5u00n/ems-vite.git>
-    cd ems-vite
-    
-    ```
-    
-2. **Install dependencies**:
-    
-    ```
-    npm install
-    
-    ```
-    
-3. **Start the development server**:
-    
-    ```
-     npm run dev
-    
-    ```
-    
 
----
+    ```bash
+    git clone <https://github.io/5u00n/ems-vite-app-state-data-stater.git>
+    cd ems-vite-app-state-data-stater
+    ```
+
+2. **Install dependencies**:
+
+    ```bash
+    npm install
+    ```
+
+3. **Start the development server**:
+
+    ```bash
+     npm run dev
+    ```
 
 ## Contributing
 
 Contributions are welcome! Please read the [contributing guidelines](/CONTRIBUTING.md) for more information.
 
----
-
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](/LICENSE) file for details.
-
----
 
 ## Acknowledgement
 

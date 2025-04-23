@@ -2,18 +2,17 @@ importScripts('https://www.gstatic.com/firebasejs/9.x.x/firebase-app-compat.js')
 importScripts('https://www.gstatic.com/firebasejs/9.x.x/firebase-messaging-compat.js');
 
 const firebaseConfig = {
-    apiKey: "AIzaSyCVzXvUeygih2ZhAr4vtr_MtdpxXC99kKc",
-    authDomain: "edusofthub-1.firebaseapp.com",
-    projectId: "edusofthub-1",
-    storageBucket: "edusofthub-1.appspot.com",
-    messagingSenderId: "517749163452",
-    appId: "1:517749163452:web:400d563596632f9b9357b9",
-    measurementId: "G-NTRVL6276",
-    databaseURL: "https://edusofthub-1-default-rtdb.firebaseio.com"
+  apiKey: 'VITE_FIREBASE_API_KEY',
+  authDomain: 'VITE_FIREBASE_AUTH_DOMAIN',
+  projectId: 'VITE_FIREBASE_PROJECT_ID',
+  storageBucket: 'VITE_FIREBASE_STORAGE_BUCKET',
+  messagingSenderId: 'VITE_FIREBASE_MESSAGING_SENDER_ID',
+  appId: 'VITE_FIREBASE_APP_ID',
+  measurementId: 'VITE_FIREBASE_MEASUREMENT_ID',
+  databaseURL: 'VITE_FIREBASE_DATABASE_URL'
 };
 
 firebase.initializeApp(firebaseConfig);
-
 const messaging = firebase.messaging();
 
 messaging.onBackgroundMessage((payload) => {
